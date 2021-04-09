@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    color: white;
+}
+
+body {
+    background-color: rgb(6, 6, 39);
+}
+.topdiv, #question, .optiondiv {
+    border: 1px solid white;
+}
+.topdiv {
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+.left {
+    display: flex;
+    flex: 3;
+}
+.timer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    flex: 1;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 3;
+}
+.right .lifelines {
+    height: 15%;
+    margin: 10px 10px;
+    width: 70px;
+}
+.lifelines img {
+    display: block;
+    width: 70px;
+    height: 60px;
+    margin: auto;
+    border-radius: 35px;
+}
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid white;
+}
+.walkaway {
+    width: 70px;
+    height: 15%;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+.walkaway img {
+    display: block;
+    width: 70px;
+    height: 60px;
+    margin: auto;
+    border-radius: 35px;
+}
+.lifelines:hover, .walkaway:hover {
+    cursor: pointer;
+}
+#question {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.optiondiv {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.optiondiv .upperOptions, .lowerOptions {
+    display: flex;
+}
+.upperOptions {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.lowerOptions {
+    margin-top: 5px;
+}
+.options {
+    margin: 0px 10px;
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.options:hover {
+    cursor: pointer;
+}
+.correct, .scoreboard {
+    background-color: #28a745;
+}
+.scoreboarddull {
+    background-color: tomato;
+}
+.incorrect {
+    background-color: #dc3545;
+}
+
+/*MODAL*/
+.modal, .audienceModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+.audienceModal {
+    display: flex;
+    justify-content: center;
+}
+.modal p {
+    font-size: 50px;
+    text-align: center;
+    color: #28a745;
+  }  
+.overlay, .audienceOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+.hidden {
+    display: none;
+}
+.hide {
+    visibility: hidden;
+}
+
+/*====MEDIA RULES====*/
+/*===================== 421px to 767px =======================*/
+@media (min-width: 421px) and (max-width: 767px) {
+    .topdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left {
+        justify-content: space-between;
+    }
+    .timer {
+        font-size: 70px;
+    }
+    .right {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .modal p {
+        font-size: 30px;
+    }
+    .audienceModal img {
+        width: 80vw;
+    }
+}
+/*===================== 280px to 420px =======================*/
+@media (min-width: 280px) and (max-width: 420px) {
+    .topdiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left {
+        justify-content: space-between;
+    }
+    .timer {
+        font-size: 30px;
+    }
+    .right {
+        justify-content: space-between;
+        align-items: center;
+    }
+    #question {
+        font-size: 20px;
+        height: 10vh;
+    }
+    .optiondiv .upperOptions, .lowerOptions {
+        flex-direction: column;
+        align-items: center;
+    }
+    .upperOptions {
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+    .optiondiv {
+        height: 30vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .options {
+        width: 90%;
+    }
+    .optionb, .optiond {
+        margin-top: 7px;
+    }
+    .modal, .audienceModal {
+        width: 90%;
+      }
+    .modal p {
+        font-size: 20px;
+    }
+    .audienceModal img {
+        width: 80vw;
+    }
+}

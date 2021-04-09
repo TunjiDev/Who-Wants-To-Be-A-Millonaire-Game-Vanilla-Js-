@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Wants To Be A Millonaire</title>
+    <link rel="stylesheet" href="WWTBAM.css">
+</head>
+<body>
+    <div class="topdiv">
+        <div class="left">
+            <div class="score">
+                <div class="score-10">AMOUNT WON: ₦10,000,000</div>
+                <div class="score-9">AMOUNT WON: ₦1,000,000</div>
+                <div class="score-8">AMOUNT WON: ₦500,000</div>
+                <div class="score-7">AMOUNT WON: ₦250,000</div>
+                <div class="score-6">AMOUNT WON: ₦100,000</div>
+                <div class="score-5">AMOUNT WON: ₦50,000</div>
+                <div class="score-4">AMOUNT WON: ₦20,000</div>
+                <div class="score-3">AMOUNT WON: ₦15,000</div>
+                <div class="score-2">AMOUNT WON: ₦10,000</div>
+                <div class="score-1">AMOUNT WON: ₦5,000</div>
+                <div class="score-0">AMOUNT WON: ₦0</div>
+            </div>
+            <div class="walkaway" title="Walk Away">
+                <img src="walkaway.png" alt="">
+            </div>
+        </div>
+        <div class="timer">40</div>
+        <div class="right">
+            <div class="lifelines fiftyFifty" title="50:50">
+                <img src="fiftyfifty.png" alt="">
+            </div>
+            <div class="lifelines call" title="Call a Friend">
+                <img src="callafriend.png" alt="">
+            </div>
+            <div class="lifelines ask" title="Ask The Audience">
+                <img src="askaudience.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal hidden">
+        <p class="modalText">CORRECT ANSWER!</p>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="audienceModal hidden">
+    </div>
+    <div class="audienceOverlay hidden"></div>
+    <div id="question"></div>
+    <div class="optiondiv">
+        <div class="upperOptions">
+            <div class="options" data-number="1"></div>
+            <div class="options optionb" data-number="2"></div>
+        </div>
+        <div class="lowerOptions">
+            <div class="options" data-number="3"></div>
+            <div class="options optiond" data-number="4"></div>
+        </div>
+    </div>
+
+
+    <audio id="lets-play" src="lets_play.mp3"></audio>
+	<audio id="easy" src="easy.mp3"></audio>
+	<audio id="wrong-answer" src="wrong_answer.mp3"></audio>
+	<audio id="correct-answer" src="correct_answer.mp3"></audio>
+    <audio id="win" src="Win.mp3"></audio>
+    <audio id="fiftyfifty" src="fiftyfifty.mp3"></audio>
+    
+    <script src="WWTBAM.js"></script>
+</body>
+</html>

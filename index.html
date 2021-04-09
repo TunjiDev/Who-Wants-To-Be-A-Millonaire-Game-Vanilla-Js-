@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+<body>
+    <main id="main-content">
+        <h1 id="title">LET'S PLAY WHO WANTS TO BE A MILLONAIRE</h1>
+        <p class="desc animate" id="desc1" style="text-shadow: 20px 20px 30px rgb(255, 0, 0); color: #e29199;">
+          Aliens are threatening to take over the world...
+        </p>
+        <p class="desc disappear" id="desc2" style="text-shadow: 20px 20px 30px rgb(255, 0, 0); color: #e29199;">
+          Unless you can beat this game of who wants to be a Millonaire...
+        </p>
+        <p class="desc disappear" id="desc3" style="text-shadow: 20px 20px 30px rgb(255, 0, 0); color: #e29199;">
+          10 simple questions....Do you have what it takes to save mankind?
+        </p>
+        <p id="cta" style="color: rgb(252, 85, 8); font-size: 50px; font-weight: bold; text-shadow: 20px 20px 30px red;">Ready?</p>
+        <div id="game-container">
+            <a href="WWTBAM.html" class="playBtn hidden">Play</a>
+        </div>
+      </main>
+
+      <script src="animation.js"></script>
+
+    <audio src="Main_Theme.mp3" id="firstPageAudio" loop="loop"></audio>
+
+    <script type="text/javascript">
+        window.onload = function() {
+        document.getElementById('firstPageAudio').play();
+    }
+    </script>
+</body>
+</html>
